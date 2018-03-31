@@ -1,5 +1,5 @@
 var timeElement = document.getElementsByClassName("stats__count")
-            var countDownDate = new Date("Mar 20, 2018 12:00:00").getTime();
+            var countDownDate = new Date("Oct 01, 2018 12:00:00").getTime();
             var x = setInterval(function() {
                 var now = new Date().getTime();
                 var distance = countDownDate - now;
