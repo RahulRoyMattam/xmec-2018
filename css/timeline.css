@@ -1,23 +1,7 @@
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
-  /*background: #111111;
-  background-image: url("../images/contact-bg.jpg");*/
-  color: #fff;
-  overflow-x: hidden;
-  padding-bottom: 50px;
-
-}   INTRO SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– 
-
+/* 
 .intro {
   background: #39b54a;
   padding: 100px 0;
@@ -32,7 +16,7 @@ body {
 
 h1 {
   font-size: 2.5rem;
-}
+} */
 
 
 /* TIMELINE
@@ -104,10 +88,7 @@ h1 {
 }
 
 time {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 8px;
+  font-size: 2.5rem;
 }
 
 
