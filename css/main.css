@@ -86,6 +86,7 @@ body {
 }
 
 
+
 /* ------------------------------------------------------------------- 
  * ## links
  * ------------------------------------------------------------------- */
@@ -2937,6 +2938,42 @@ html.no-csstransitions .home-content__main {
     position: relative;
 }
 
+/* ===================================================================
+ * # twitter 
+ *
+ * ------------------------------------------------------------------- */
+.s-twitter {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.4);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    font-family: "montserrat-light", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2;
+    position: relative;
+}
+
+.s-twitter .grid{
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.twitter-row {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.s-twitter .intro-wrap {
+    padding: 5rem 0 5rem;
+    background: #111111;
+}
+
+
+
 
 /* ===================================================================
  * # contact 
@@ -3153,6 +3190,10 @@ html.no-csstransitions .home-content__main {
 
 .contact-social li:last-child {
     margin: 0;
+}
+
+.contact-mec-logo {
+    margin-top: 35px;
 }
 
 .message-warning, 
