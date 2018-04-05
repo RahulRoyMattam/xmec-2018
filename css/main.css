@@ -2722,9 +2722,10 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-contact {
     background-color: #151515;
-    background-image: url("https://images.pexels.com/photos/591216/pexels-photo-591216.jpeg?cs=srgb&dl=forest-friends-friendship-591216.jpg&fm=jpg");
+    background-image: url("../images/contact.jpeg");
     background-repeat: no-repeat;
     background-position: center, center;
+    background-size: cover;
     padding-top: 15rem;
     padding-bottom: 12rem;
     color: rgba(255, 255, 255, 0.5);
@@ -3103,7 +3104,6 @@ html.no-csstransitions .home-content__main {
         top: -7.2rem;
     }
     .contact-content {
-        padding-bottom: 12rem;
         text-align: center;
     }
     .contact-primary, .contact-secondary {
