@@ -2712,7 +2712,18 @@ html.no-csstransitions .home-content__main {
     padding: 5rem 0 5rem;
     background: #111111;
 }
+/* responsive twitter */
 
+@media only screen and (max-width: 600px) {
+    .s-twitter .grid{
+       -moz-column-count: 1;
+       -moz-column-gap: 10px;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 10px;
+        column-count: 1;
+        column-gap: 10px;
+    }
+}
 
 
 
