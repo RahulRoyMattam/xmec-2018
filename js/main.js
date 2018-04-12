@@ -184,71 +184,6 @@
     };
 
 
-   /* Alert Boxes
-    * ------------------------------------------------------ */
-    var clAlertBoxes = function() {
-
-        $('.alert-box').on('click', '.alert-box__close', function() {
-            $(this).parent().fadeOut(500);
-        }); 
-
-    };
-
-
-   /* Contact Form
-    * ------------------------------------------------------ */
-    var clContactForm = function() {
-        
-        /* local validation */
-        $('#contactForm').validate({
-        
-            /* submit via ajax */
-            submitHandler: function(form) {
-    
-                var sLoader = $('.submit-loader');
-    
-                $.ajax({
-    
-                    type: "POST",
-                    url: "inc/sendEmail.php",
-                    data: $(form).serialize(),
-                    beforeSend: function() { 
-    
-                        sLoader.slideDown("slow");
-    
-                    },
-                    success: function(msg) {
-    
-                        // Message was sent
-                        if (msg == 'OK') {
-                            sLoader.slideUp("slow"); 
-                            $('.message-warning').fadeOut();
-                            $('#contactForm').fadeOut();
-                            $('.message-success').fadeIn();
-                        }
-                        // There was an error
-                        else {
-                            sLoader.slideUp("slow"); 
-                            $('.message-warning').html(msg);
-                            $('.message-warning').slideDown("slow");
-                        }
-    
-                    },
-                    error: function() {
-    
-                        sLoader.slideUp("slow"); 
-                        $('.message-warning').html("Something went wrong. Please try again.");
-                        $('.message-warning').slideDown("slow");
-    
-                    }
-    
-                });
-            }
-    
-        });
-    };
-
-
    /* Animate On Scroll
     * ------------------------------------------------------ */
     var clAOS = function() {
@@ -294,7 +229,6 @@
             4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
             5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
         } 
-
     };
 
 
@@ -321,8 +255,7 @@
 
    /* Initialize
     * ------------------------------------------------------ */
-    (function ssInit() {
-        
+    (function ssInit() {        
         clPreloader();
         clMenuOnScrolldown();
         clOffCanvas();
@@ -330,8 +263,6 @@
         clMasonryFolio();
         clSmoothScroll();
         clPlaceholder();
-        clAlertBoxes();
-        clContactForm();
         clAOS();
         clAjaxChimp();
         clBackToTop();
