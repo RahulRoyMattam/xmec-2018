@@ -1,7 +1,7 @@
 (function () {
     "use strict";
     var timeElement = document.getElementsByClassName("stats__count")
-    var countDownDate = new Date("Oct 01, 2018 00:00:00").getTime();
+    var countDownDate = new Date("Dec 08, 2018 00:00:00").getTime();
     var countDown = function(){
         var now = new Date().getTime();
             var distance = countDownDate - now;
